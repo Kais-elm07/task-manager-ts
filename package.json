@@ -1,0 +1,31 @@
+{
+  "name": "task-manager-ts",
+  "version": "1.0.0",
+  "description": "Async task management backend built with Node.js, TypeScript (strict mode) and ES Modules",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "verify": "npm run typecheck && npm test && npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "esm",
+    "async",
+    "promises"
+  ],
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

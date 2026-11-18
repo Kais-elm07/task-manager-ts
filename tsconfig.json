@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    /* Language & modules: native ES Modules on Node.js */
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "verbatimModuleSyntax": true,
+    "types": ["node"],
+
+    /* Type safety: strict mode plus extra checks */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    /* Output */
+    "rootDir": ".",
+    "outDir": "dist",
+    "sourceMap": true,
+
+    /* Interop */
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "include": ["src", "tests"]
+}
